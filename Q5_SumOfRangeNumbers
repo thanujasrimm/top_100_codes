@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Sumofnumbers{
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter the start");
+        int S = sc.nextInt();
+        System.out.print("enter the end");
+        int E = sc.nextInt();
+        int sum = 0;
+        for(int i=S;i<=E;i++){
+             if(S>=1){
+              sum += i;
+             }
+              }
+              System.out.print("Sum of natural numbers:"+ sum);
+              sc.close();
+    }
+}
