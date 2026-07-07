@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class num{
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter the digit");
+        int digit = sc.nextInt();
+        int num = digit;
+        int rev =0;
+        while(digit>0){
+         int rem =digit%10;
+         rev = rev*10 + (rem);
+          digit = digit/10;
+        }
+            if(rev == num){
+                System.out.print("Palindrome");
+            }else{
+                System.out.print("Not A Palindrome");
+            }
+        sc.close();
+    }}
